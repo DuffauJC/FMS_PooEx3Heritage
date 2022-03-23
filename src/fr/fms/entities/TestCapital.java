@@ -1,6 +1,4 @@
 package fr.fms.entities;
-import java.util.ArrayList;
-
 
 public class TestCapital {
 

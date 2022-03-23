@@ -65,10 +65,10 @@ public class City {
 	@Override
 	public String toString() {
 		if (getNbInhabitants()==0) {
-			return getCityName() + " , " + getCountry();
+			return "Ville de naissance : "+ getCityName() + " , " + getCountry();
 		}else {
-			return getCityName() + " , " + getCountry() +
-					" , " + getNbInhabitants()+" habitants, ";	
+			return "Ville de naissance : "+getCityName() + " , " + getCountry() +
+					" , " + getNbInhabitants()+" habitants ";	
 		}
 
 	}
