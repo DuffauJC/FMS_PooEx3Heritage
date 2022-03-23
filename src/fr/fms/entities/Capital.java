@@ -38,11 +38,4 @@ public class Capital extends City {
 		return super.toString() +", monument : " + monument;
 	}
 
-
-
-
-
-
-
-
 }
