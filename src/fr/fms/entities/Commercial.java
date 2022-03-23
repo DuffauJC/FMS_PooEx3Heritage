@@ -4,7 +4,7 @@ public class Commercial extends Person {
 
 	private String enterprise;
 	private double ca=10.0;
-	private double salary=0.0;
+	private double salary=10.0;
 	
 /**
  * constructor
@@ -22,7 +22,15 @@ public class Commercial extends Person {
 		setCa(ca);
 	}
 	
-	//surcharge du constructor
+	/**
+	 * surcharge du constructor
+	 * @param firstName
+	 * @param lastName
+	 * @param age
+	 * @param adress
+	 * @param bornCity
+	 * @param enterprise
+	 */
 	public Commercial(String firstName, String lastName, int age, String adress, Object bornCity,String enterprise) {
 		super(firstName, lastName, age, adress, bornCity);
 		setEnterprise(enterprise);
