@@ -1,7 +1,7 @@
 package fr.fms.entities;
 
 
-public class Person {
+public abstract class Person {
 
 	// properties
 	private String firstName;
@@ -79,6 +79,11 @@ public class Person {
 	}
 
 	// methodes
+	
+	public double remuneration() {
+		return 0;
+		
+	}
 
 	/**
 	 * methode toString
@@ -90,9 +95,6 @@ public class Person {
 				" , " +getAge()+"ans" + " , habitant "+getAdress()+" , " +getBornCity();
 
 	}
-
-
-
 
 
 }

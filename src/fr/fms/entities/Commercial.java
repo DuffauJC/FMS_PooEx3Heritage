@@ -5,6 +5,7 @@ public class Commercial extends Person {
 	private String enterprise;
 	private double ca=10.0;
 	private double salary=10.0;
+	private double pourCa=0.20;
 	
 /**
  * constructor
@@ -34,10 +35,9 @@ public class Commercial extends Person {
 	public Commercial(String firstName, String lastName, int age, String adress, Object bornCity,String enterprise) {
 		super(firstName, lastName, age, adress, bornCity);
 		setEnterprise(enterprise);
-		setCa(ca);
 	}
 
-
+	
 	//accessors
 	public String getEnterprise() {
 		return enterprise;
@@ -66,14 +66,16 @@ public class Commercial extends Person {
 		this.salary = salary;
 	}
 	
-	public double calcul(double ca) {
-		salary=ca*0.20;
+
+	public double remuneration() {
+		salary=ca*pourCa;
 		return salary;
+		
 	}
 
 	@Override
 	public String toString() {
-		return super.toString()+ ", Entreprise : "  + enterprise + ", rémunération 20 % de " + ca + " soit : " + calcul(ca) +"Euros";
+		return super.toString()+ ", Entreprise : "  + enterprise + ", rémunération 20 % de " + ca + " soit : " + remuneration();
 
 
 	}

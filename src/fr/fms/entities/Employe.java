@@ -4,12 +4,12 @@ public class Employe extends Person {
 	
 	private String enterprise;
 	private double salary;
+	private int charge=100;
 
 	public Employe(String firstName, String lastName, int age, String adress,Object bornCity,String enterprise,double salary) {
 		super(firstName, lastName, age, adress, bornCity);
 		setEnterprise(enterprise);
 		setSalary(salary);
-		
 	}
 	
 	//accessors
@@ -29,10 +29,16 @@ public class Employe extends Person {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
+	
+	public double remuneration() {
+		salary=salary-charge;
+		return salary;
+		
+	}
 
 	@Override
 	public String toString() {
-		return super.toString()+ ", Entreprise : " + enterprise + ", salaire : " + salary;
+		return super.toString()+ ", Entreprise : " + enterprise + ", salaire : " + remuneration();
 	}
 
 	
