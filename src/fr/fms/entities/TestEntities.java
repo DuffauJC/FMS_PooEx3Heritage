@@ -3,7 +3,12 @@ package fr.fms.entities;
 import java.util.ArrayList;
 
 public class TestEntities {
-
+	/**
+	 * Program principal test de nos entités.
+	 * @param args
+	 * @author Jean-Charles Duffau
+	 * @version 1.0
+	 */
 	public static void main(String[] args) {
 
 		Employe marcel = new Employe("Marcel","Poirot", 40,"15 ème arrondissement de Paris",new City("Marseille","France",845000),"Total",12500.50); 

@@ -5,7 +5,16 @@ public class Employe extends Person {
 	private String enterprise;
 	private double salary;
 	private int charge=100;
-
+/**
+ * 
+ * @param firstName
+ * @param lastName
+ * @param age
+ * @param adress
+ * @param bornCity
+ * @param enterprise
+ * @param salary
+ */
 	public Employe(String firstName, String lastName, int age, String adress,Object bornCity,String enterprise,double salary) {
 		super(firstName, lastName, age, adress, bornCity);
 		setEnterprise(enterprise);
